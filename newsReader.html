@@ -1,0 +1,40 @@
+<!Doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<title>News Feeder</title>
+	<link rel="stylesheet" type="text/css"	href="style.css">
+	<script src="https://cdn.rawgit.com/sekando/feednami-client/master/releases/1.0.2.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div id="sidebar">
+			<p>
+			<h2>Select sources</h2>
+				<h4>Technology</h4>
+				<input type="checkbox" value="androidpit" onclick="feedSources.toggleRead(0)">Android Pit <br>
+				<input type="checkbox" value="arstechnica" onclick="feedSources.toggleRead(1)">ArsTechnica <br>
+				<input type="checkbox" value="engadget" onclick="feedSources.toggleRead(2)">Engadget <br>
+				<input type="checkbox" value="theverge" onclick="feedSources.toggleRead(3)">The Verge <br>
+				<input type="checkbox" value="anandtech" onclick="feedSources.toggleRead(4)">Anandtech <br>
+				<input type="checkbox" value="androidcentral" onclick="feedSources.toggleRead(5)">Android Central <br>
+				<input type="checkbox" value="pocketnow" onclick="feedSources.toggleRead(6)">Pocketnow <br>
+				<h4>Top Stories</h4>
+				<input type="checkbox" value="cnet" onclick="feedSources.toggleRead(7)">CNET <br>
+				<input type="checkbox" value="bbc" onclick="feedSources.toggleRead(8)">BBC <br>
+				<input type="checkbox" value="googlenewssources" onclick="feedSources.toggleRead(9)">Washington Post <br> <br>
+				<button id="feedReader">Get Stories</button>
+		</div>
+	<div id="main">
+
+		<div id="feeder"></div>
+	</div>
+</div>
+		<div style="color:darkblue; width: 350px;">padded space</div>
+
+<script src="newsReader.js"></script>
+</body>
+
+</html>
